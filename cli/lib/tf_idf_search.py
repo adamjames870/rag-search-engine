@@ -15,6 +15,19 @@ def idf_search(term: str) -> float:
     return movie_index.get_idf(term)
 
 def tfidf_search(doc_id: int, term: str) -> float:
+
     tf = tf_search(doc_id, term)
     idf = idf_search(term)
     return tf * idf
+
+def bm25idf_search(term: str) -> float:
+
+    movie_index = InvertedIndex()
+    term = clean_keywords(term)[0]
+    return movie_index.get_bm25_idf(term)
+
+def bm25tf_search(doc_id: int, term: str) -> float:
+
+    movie_index = InvertedIndex()
+    term = clean_keywords(term)[0]
+    return movie_index.get_bm25_tf(doc_id, term)

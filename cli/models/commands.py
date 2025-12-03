@@ -6,6 +6,9 @@ class Command(Enum):
     TF = "tf"
     IDF = "idf"
     TFIDF = "tfidf"
+    BM25IDF = "bm25idf"
+    BM25TF = "bm25tf"
+    BM25SEARCH = "bm25search"
 
 class Arguments(Enum):
     TERM = "term"

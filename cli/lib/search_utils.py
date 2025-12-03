@@ -4,6 +4,8 @@ from models.movies_model import MoviesData
 
 MOVIES_FILEPATH = "./data/movies.json"
 STOPWORDS_FILEPATH = "./data/stopwords.txt"
+BM25_K1 = 1.5
+BM25_B = 0.75
 
 def load_movies() -> MoviesData:
 

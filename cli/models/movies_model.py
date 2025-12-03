@@ -1,7 +1,13 @@
 ﻿from typing import List
 from typing import Any
 from dataclasses import dataclass
-import json
+
+@dataclass
+class MovieScore:
+    id: int
+    title: str
+    score: float
+
 @dataclass
 class Movie:
     id: int
