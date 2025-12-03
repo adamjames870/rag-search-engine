@@ -1,6 +1,9 @@
 import sys
 from pathlib import Path
 
+# run using
+# uv run web_app.py
+
 # 1. Add cli/ to sys.path
 ROOT = Path(__file__).resolve().parent
 CLI_DIR = ROOT / "cli"
