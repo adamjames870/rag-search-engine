@@ -27,8 +27,8 @@ def basic_clean(text: str) -> list[str]:
     text = remove_punctuation(text)
     tokens = tokenise(text)
     tokens  = remove_stopwords(tokens)
-    words = stem_words(tokens)
-    return words
+    tokens = stem_words(tokens)
+    return tokens
 
 def remove_stopwords(text: list[str]) -> list[str]:
     stopwords = set(load_stopwords())

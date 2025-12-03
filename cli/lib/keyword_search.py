@@ -6,7 +6,6 @@ from models.movies_model import MoviesData
 
 def keyword_search(search_string: str, max_results: int) -> MoviesData:
 
-    movies_data = load_movies()
     found_movies_ids: list[int] = []
     found_movies = MoviesData()
     keywords = clean_keywords(search_string)
