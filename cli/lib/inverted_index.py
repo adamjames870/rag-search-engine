@@ -1,13 +1,12 @@
 ﻿import math
 import os
 import pickle
-from argparse import ArgumentError
 from collections import defaultdict, Counter
-from itertools import count
 
 from lib.clean_keywords import clean_keywords, tokenise
 from lib.search_utils import load_movies, BM25_K1, BM25_B
 from models.movies_model import Movie
+
 
 class InvertedIndex:
     index: dict[str, set[int]]

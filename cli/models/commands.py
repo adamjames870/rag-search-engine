@@ -13,3 +13,6 @@ class Command(Enum):
 class Arguments(Enum):
     TERM = "term"
     DOC_ID = "doc_id"
+
+class SemSearchCommand(Enum):
+    VERIFY = "verify"
