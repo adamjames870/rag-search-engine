@@ -16,3 +16,4 @@ class Arguments(Enum):
 
 class SemSearchCommand(Enum):
     VERIFY = "verify"
+    EMBED_TEXT = "embed_text"
